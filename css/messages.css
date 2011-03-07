@@ -1,0 +1,81 @@
+.messages * {font-family:arial;}
+/* controls */
+#messages_interface {clear:both;}
+#messages_table {margin:10px 0;border: solid #e5e5e5;border-width:0 0 1px 0;clear:both;}
+#messages_table td {border:1px solid #e5e5e5;border-width:1px 0 0 0;padding:4px 2px;}
+#messages_table td.checkbox {width:20px;}
+#messages_table td.avatar {width:75px;text-align:center;}
+#messages_table td.avatar img {width:50px;}
+#messages_table td.author {width:150px;}
+#messages_table td.delete {width:20px;}
+#messages_table td.delete a {display:block;text-indent:-9999em;width:16px;height:16px;background:url(../images/cancel.png) no-repeat;}
+#messages_table tr.unread td.subject a {font-weight:bold;}
+#controls_wrap {font-size:11px;color:#666;width:100%;}
+#select_control {width:49%;float:left;}
+#show_control {width:49%;float:right;text-align:right;}
+#show_control a {padding:2px 6px;}
+#show_control a.current {background:#6782b3;border:1px solid #6782b3;-moz-border-radius:5px;-webkit-border-radius:5px;color:#fff;}
+.message_actions {background:#f2f2f2;padding:6px 6px;overflow:hidden;margin:10px 0;}
+.next_prev {float:right;}
+#new_message {text-align:right;padding:4px 0;width:110px;float:right;}
+#facebox .close {visibility:hidden;}
+#facebox table {border:0;}
+
+/* basic form styling */
+.messages form {width:620px;margin:0;}
+.messages form fieldset {border:0;margin:0;}
+.messages form .field {clear:both;margin:10px 0;overflow:hidden;padding:0;}
+.messages form label {width:60px;float:left;color:#666;font-family:arial;font-size:12px;}
+.messages form .middleColumn {width:505px;float:left;background:transparent;margin:0;}
+.messages form .field input,
+.messages form .field textarea {font-size:12px;color:#666;font-weight:normal;}
+.messages form textarea {border:1px solid #999;width:100%;padding:4px 2px;}
+.messages form .Actions {width:517px;text-align:right;padding-right:0px;}
+.messages form .message {text-align:center;font-family:arial;font-size:12px;border: 1px solid;margin: 10px 0px;padding:10px 5px;color: #4F8A10;background-color: #DFF2BF;}
+.messages .Actions input {background:#3b5998;border:0;font-size:12px;color:#fff;padding:5px 10px;border:1px solid;border-color: #d9dfda #0e1f5b #0e1f5b #d9dfda; }
+.messages form .required {background:transparent;border:0;color:inherit;width:100%;}
+
+.message_new h2 {font-family:arial;width:505px;font-size:14px;background:#ddd;padding:6px 4px;color:#333;}
+
+/* message detail */
+.message_wrap {border-bottom:1px solid #ddd;margin:10px 0;padding:10px 0;}
+.message_wrap .message_side {width:75px;text-align:center;float:left;}
+.message_wrap .message_side img {width:50px;}
+.message_wrap .message_main {width:510px;float:left;}
+.message_wrap h4 {margin:0 0 5px 0;padding-top:0;line-height:100%;border:0;}
+.message_wrap h4 span {font-size:11px;color:#666;}
+
+.message_new {margin:0;}
+
+/* buttons */
+.messages a.btn,
+.messages form button {display: inline-block;background: #dcdcdc url(../images/btn.bg.png) repeat-x 0px 0px;padding:2px 6px 2px 6px;font-weight:bold;text-shadow: 1px 1px 1px rgba(255,255,255,0.5);border:1px solid rgba(0,0,0,0.4);-moz-border-radius: 5px;-moz-box-shadow: 0px 0px 2px rgba(0,0,0,0.5);-webkit-border-radius: 5px;-webkit-box-shadow: 0px 0px 2px rgba(0,0,0,0.5);color:#555;font-size:11px;font-family:arial;text-decoration:none;}
+a.btn {line-height:150%;}
+a.btn:hover,
+.messages form button:hover {background-color:#e5e5e5;text-decoration:none;}
+a.btn.disabled,
+.messages form button.disabled {background-color:#f2f2f2;border-color:#c8c8c8;color:#b8b8b8;}
+
+
+/* specific form tweaks */
+.messages #Form_CreateMessageForm #Form_CreateMessageForm_action_doCancel {background:#dcdcdc;color:#555;border-color:#aaa #999 #999 #aaa;}
+.messages #Form_CreateMessageForm #Form_CreateMessageForm_action_doCancel:hover {background:#e5e5e5;}
+.messages #Body textarea {border:1px solid #999;}
+.messages #Form_MessageForm {width:100%;}
+.messages #Form_CreateMessageForm #To select {display:none;}
+.messages #Form_CreateMessageForm .text input {width:100%;border:1px solid #999;padding:4px 2px;}
+.messages #Form_ReplyForm label {width:65px;text-align:right;padding-right:10px;margin:0;}
+.messages #Form_ReplyForm .middleColumn {clear:none;margin:0;padding:0;}
+.messages #Form_ReplyForm .Actions {margin-left:71px;}
+#messages_util {width:100%;}
+#messages_search {width:160px;float:right;padding-top:4px;}
+#Form_MessagesSearchForm {width:160px;font-size:11px;color:#666;margin:0;padding:0;}
+#Form_MessagesSearchForm_MessagesSearch {display:block;float:left;border:1px solid #ccc;height:14px;display:block;width:128px;margin:0;color:#999;font-weight:normal;font-size:11px;-moz-border-radius: 5px 0 0 5px;-webkit-border-top-left-radius: 5px;-webkit-border-bottom-left-radius: 5px;padding:4px;}
+#Form_MessagesSearchForm_action_doSearch {font-size:1em;display:block;float:left;margin:0;padding:0;height:24px;width:22px;border:1px solid #ccc;border-width:1px 1px 1px 0;text-indent:-9999em;background:url(/postale/images/zoom.png) no-repeat center;-moz-border-radius: 0 5px 5px 0;-webkit-border-top-right-radius: 5px;-webkit-border-bottom-right-radius: 5px;}
+#Form_MessagesSearchForm_MessagesSearch.focus {color:#666}
+
+label.error {display:block;width:auto !important;background:#fcdad6;padding:4px;margin-left:2px !important;}
+/* utilities */
+.clearfix {zoom: 1;display: block;} 
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.clearfix {display: inline-block;}
