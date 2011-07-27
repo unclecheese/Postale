@@ -444,11 +444,24 @@ class MessagesPage extends Page_Controller {
 	 * @return form
 	 */
 	public function CreateMessageForm() {
+		$map = array();
+		if(isset($_REQUEST['to'])) {
+			$to = $_REQUEST['to'];
+			if(!is_array($to))
+				$to = array($_REQUEST['to']);
+			
+			foreach($to as $id) {
+				if($member = DataObject::get_by_id("Member", Convert::raw2sql($id))) {
+					$map[$member->ID] = $member->getName();
+				}
+			}
+		}
+
 		return new Form(
 			$this,
 			"CreateMessageForm",
 			new FieldSet(
-				new DropdownField('To', _t('Postale.TO','To'),array()),
+				new DropdownField('To', _t('Postale.TO','To'),$map),
 				new TextField('Subject', _t('Postale.SUBJECT','Subject')),
 				new TextareaField('Body', _t('Postale.BODY','Body'))
 			),

@@ -78,6 +78,21 @@ class MessagesMember extends DataObjectDecorator {
 		return false;
 	}
 	
+	/**
+	 * Link to send this user a message
+	 *
+	 * @return string
+	 */
+	public function SendMessageLink()
+	{
+		Requirements::javascript(THIRDPARTY_DIR.'/jquery/jquery.js');
+		Requirements::javascript('dataobject_manager/javascript/facebox.js');
+		Requirements::javascript('postale/javascript/behaviour.js');
+		Requirements::css('dataobject_manager/css/facebox.css');				
+		return MessagesPage::Link('add')."?to=".$this->owner->ID;
+	}
+	
+	
 	
 	
 }
